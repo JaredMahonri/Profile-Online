@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Jared Mahonri</title>
+    <link rel="icon" type="resume" href="resume.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="acordeon.css">
+    <link rel="stylesheet" href="languages.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <img src="jared_foto-removebg-preview.png" alt="Foto de Perfil" class="photo" id="profile.photo">
+
+            <h1 class="title">
+                <span id="profile.name"><strong>Jared Mahonri<strong></span>
+            </h1>
+
+            <button class="goal" onclick="typeWriter()">Objetivo</button>
+
+            <p id="demo"></p>
+
+            <script>
+              var i = 0;
+              var txt = 'Desenvolvimento Web';
+              var speed = 50;
+              
+              function typeWriter() {
+                if (i < txt.length) {
+                  document.getElementById("demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+            </script>
+
+            <div class="information">
+                <p class="job" id="profile.job">Web Developed</p>
+                <p class="location" id="profile.location">Caxias do Sul/RS - Brasil</p>
+                <p class="phone">
+                    <a href="tel:(54) 99631-2018" id="profile.phone" target="_blank">(54) 99622-7961</a>
+                </p>
+                <p class="email">
+                    <a href="jaredsimplicio885@gmail.com" id="profile.email" target="_blank">jaredsimplicio885@gmail.com</a>
+                </p>
+            </div>
+        </header>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Skills</h2>
+            </button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul id="profile.skills.hardSkills">
+                          <li><img src="html.png" alt="HTML" title="HTML"></li>
+                          <li><img src="css.png" alt="CSS" title="CSS"></li>
+                          <li><img src="js.png" alt="JavaScript" title="JavaScript"></li>
+                          <li><img src="git.png" alt="Git" title="Git"></li>
+                          <li><img src="github.png" alt="GitHub" title="GitHub"></li>
+                          <li><img src="react.png" alt="React" title="React"></li>
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>OUTROS SKILLS</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Web Designer</li>
+                            <li>Desenvolvedor Web</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
+
+            <div class="content">
+                <ul class="languages" id="profile.languages">
+                    <li>Inglês (Avançado)</li>
+                    <li>Espanhol (Básico)</li>
+                    <li>Português (Nativo)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+          <button class="trigger" type="button">
+            <h2>Portfólio</h2>
+          </button>
+
+            <div class="content">
+              <ul class="portfolio" id="profile.portfolio">
+                <li>
+                    <h3 class="github">Portfólio On-line</h3>
+                    <a href="https://github.com/Giljared/portfolio-online" target="_blank">https://www.behance.net/jaredmahonri</a>
+                </li>
+                <li>
+                  <h3 class="github">Porfile On-line</h3>
+                  <a href="https://github.com/JaredMahonri" target="_blank">https://github.com/JaredMahonri</a>
+              </li>
+                
+            </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Experiência Profissional</h2>
+            </button>
+
+            <div class="content">
+                <ul class="experience" id="profile.professionalExperience">
+                  <li>
+                    <h3 class="title">Desenvolvedor Web<br><a href="https://revdigital.com.br/" target="_blank">RevDigital/Web Developed</a></h3>
+                    <p class="period">Jan/2020 - Atual</p>
+                    <ul>
+                      <li>Desenvolvimento de projetos, atuando no Deenvolvimento Web, em constante integração com o time o Stack de BackEnd</li>
+                      <li>Atuação em versionamento de códigos
+                      </li>
+                      <li>Atuação em HTML, CSS, Javascript e Wordpress
+                      </li>
+                    </ul>
+                  <li>
+                    <h3 class="title">Web Designer<br><a href="https://revdigital.com.br/" target="_blank">RevDigital/Prototipação</a></h3>
+                    <p class="period">Jan/2020 - Atual</p>
+                    <ul>
+                      <li>Atuação na criação, prototipação e personalização e no gerenciamento de sites, atuação com o aprimoramento do software, produzindo novos plugins e novos temas.</li>
+                      <li>Implementação de templates existentes para criar um site rapidamente, criando sites e landingpage completamente customizados, do zero e personalizados.
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <h3 class="title">Designer<br><a href="https://revdigital.com.br/" target="_blank">RevDigital/Layout</a></h3>
+                    <p class="period">Jan/2020 - Atual</p>
+                    <ul>
+                      <li>Responsável pela preparação do material designer na área de tecnologia e desenvolviemnto.</li>
+                      <li>Atuação com conhecimento em Figma, Adobe e photoshop a seres produzidos, implementando o planejamento dos conteúdos.  Software de edição de imagens digitais que permite criar, editar e transformar imagens utilizado por fotógrafos, designers, profissionais da web e de vídeo para uma variedade de tarefas. A multiplicidade de usos do software faz com que o Photoshop seja uma ferramenta de trabalho para diversos tipos de profissionais.</li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+          <button class="trigger" type="button">
+              <h2>Cursos/Diplomas</h2>
+          </button>
+
+          <div class="content">
+              <ul class="curses" id="profile.Certifications">
+                </h3>
+                <h3 class="title">ADS-ANÁLISE E DESENVOLVIMENTO DE SISTEMAS E PROGRAMAS<br><a href="https://drive.google.com/file/d/1QGQ4Lt7ae_jwVpUzrUYDqKLqHuPQjVFp/view?usp=sharing" target="_blank">Descomplica Digital</a>  
+                  <li> Especialista em Programmer</li>
+                  <li>Empreendedorismo e Criação de Novos Negócios</li> 
+                  <li>Lógica de Programação</li>  
+                  <li>Desenvolvimento Dinâmico</li>
+                  <li>Experiência do Usuário</li>
+                  <li>Desenvolvimento FrontEnd</li>
+          </div>
+      </section>
+
+        <footer id="img2">
+            <a href="https://www.linkedin.com/in/jared-simplicio/" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn" style="display: block;" width="50">
+            </a>
+            <a href="https://github.com/JaredMahonri" target="_blank">
+              <img src="github.png" alt="GitHub" style="display:block" width="50">
+          </a>
+            <a href="mailto:jaredsimplicio885@gmail.com" target="_blank">
+              <img src="gmail.png" alt="Gmail" style="display:block" width="50">
+            </a>
+            <a href="https://wa.me/54996227961" target="_blank">
+              <img src="whatsapp.png" alt="WhatsApp" style="display:block" width="50">
+            </a>
+        </footer>
+    </main>
+
+    <script src="acordeon.js"></script>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
